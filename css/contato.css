@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;outline: none; margin: 0px; padding: 0px;
+}
+body {
+  font-size: 14px;
+	background: rgba(17,17,17,1.00);
+}
+.menu{
+	float: left;
+	width: 100%;
+	background: rgba(0,0,0,1.00);
+}
+.menu ul{
+	text-decoration: none;
+	color: rgba(255,255,255,1.00);
+	list-style: none;
+	padding: 0;
+}
+.menu ul li{
+	display: inline;
+	float: left;
+	position: relative;
+}
+.menu ul li:last-child{
+	float: right;
+}
+.menu ul li a{
+	display: inline-block;
+	color: rgba(255,255,255,1.00);
+	text-decoration: none;
+	padding: 30px;
+	font-size: 36px;
+	font-family: OCR A Extended;
+}
+
+.menu ul li a:hover{
+	background-color: rgba(70,70,70,1.00);
+	transition: 0.1s;
+}
+.menu ul ul{
+	position: absolute;
+	display: none;
+	width: 150px;
+	left: 0; 
+}
+.menu ul li:hover ul{
+	position: absolute;
+	display: block;
+}
+.menu ul ul li a{
+	display: block;
+	width: 200px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+.rodape {
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 1007px;
+  left: 0px;
+	background: rgba(0,0,0,1.00);
+}
+.rodape_txt {
+    color: rgba(255,255,255,1);
+    font-family: OCR A Extended;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+	padding: 50px;
+	background: rgba(0,0,0,1.00);
+	border-radius: 0px;
+	margin: 0px;
+}
+.rodape_txt_1 {
+    color: rgba(255,255,255,1);
+    font-family: OCR A Extended;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+	padding: 50px;
+	background: rgba(0,0,0,1.00);
+	border-radius: 0px;
+	margin: 0px;
+}
+.rodape_txt:hover, .rodape_txt_1:hover{
+	background: rgba(60,60,60,1.00);
+	transition: 0.2s;
+}
+.logo{
+	background: url( "../imagens/logo pereirão nome.png");
+	width: 30%;
+	height: 97px;
+	left: 35%;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+h1{
+	color: rgba(255,255,255,1.00);
+	font-size: 48px;
+	text-align: center;
+	top: 150px;
+	left: 30%;
+	width: 40%;
+	position: absolute;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	border: rgba(255,255,255,1.00) solid 5px;
+	border-radius: 15px;
+	padding: 10px;
+}
+#cadastro{
+	width: 80%;
+	left: 10%;
+	position: absolute;
+	top: 250px;
+}
+#cadastro label{
+	top: 25px;
+	text-align: center;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(255,255,255,1.00);
+	position: relative;
+}
+#cadastro input{
+	border: none;
+	border-radius: 15px;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(66,66,66,1.00);
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+#cadastro button{
+	top: 650px;
+	width: 20%;
+	left: 80%;
+	height: 60px;
+	position: absolute;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(0,0,0,1.00);
+	cursor: pointer;
+	border-radius: 25px;
+}
