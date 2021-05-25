@@ -58,7 +58,7 @@ body {
   width: 100%;
   opacity: 1;
   position: absolute;
-  top: 1007px;
+  top: 1057px;
   left: 0px;
 	background: rgba(0,0,0,1.00);
 }
@@ -123,8 +123,10 @@ h1{
 	left: 10%;
 	position: absolute;
 	top: 250px;
+	text-align: center;
 }
-#cadastro label{
+
+.email{
 	top: 25px;
 	text-align: center;
 	font-family: OCR A Extended;
@@ -133,7 +135,7 @@ h1{
 	color: rgba(255,255,255,1.00);
 	position: relative;
 }
-#cadastro input{
+#email{
 	border: none;
 	border-radius: 15px;
 	font-family: OCR A Extended;
@@ -145,8 +147,86 @@ h1{
 	padding: 10px;
 	text-align: center;
 }
+
+.nome{
+	top: 25px;
+	text-align: center;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(255,255,255,1.00);
+	position: relative;
+}
+#nome{
+	border: none;
+	border-radius: 15px;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(66,66,66,1.00);
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+.senha{
+	top: 25px;
+	text-align: center;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(255,255,255,1.00);
+	position: relative;
+}
+#senha{
+	border: none;
+	border-radius: 15px;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(66,66,66,1.00);
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+.senha_conf{
+	top: 25px;
+	text-align: center;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(255,255,255,1.00);
+	position: relative;
+}
+#senha_conf{
+	border: none;
+	border-radius: 15px;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(66,66,66,1.00);
+	width: 100%;
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+}
+
+.input_check{
+	top: 5px;
+	text-align: center;
+	font-family: OCR A Extended;
+    font-weight: Bold;
+	font-size: 36px;
+	color: rgba(255,255,255,1.00);
+	left: 40px;
+	position: relative;
+}
+
 #cadastro button{
-	top: 650px;
+	top: 700px;
 	width: 20%;
 	left: 80%;
 	height: 60px;
@@ -154,7 +234,65 @@ h1{
 	font-family: OCR A Extended;
     font-weight: Bold;
 	font-size: 36px;
-	color: rgba(0,0,0,1.00);
+	color: rgba(255,255,255,1.00);
 	cursor: pointer;
-	border-radius: 25px;
+	border-radius: 15px;
+	border: 4px solid rgba(255,255,255,1.00);
+	background: none;
 }
+#cadastro button:hover{
+	background: rgba(50,50,50,1.00);
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2E2E2E;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 10px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 

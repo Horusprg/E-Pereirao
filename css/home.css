@@ -9,20 +9,23 @@ body {
 	float: left;
 	width: 100%;
 	background: rgba(0,0,0,1.00);
+	border: none;
 }
 .menu ul{
 	text-decoration: none;
 	color: rgba(255,255,255,1.00);
 	list-style: none;
 	padding: 0;
+	border: none;
 }
 .menu ul li{
-	display: inline;
-	float: left;
+	display: inline-block;
 	position: relative;
+	border: none;
 }
 .menu ul li:last-child{
 	float: right;
+	border: none;
 }
 .menu ul li a{
 	display: inline-block;
@@ -31,17 +34,18 @@ body {
 	padding: 30px;
 	font-size: 36px;
 	font-family: OCR A Extended;
+	border: none;
 }
 
 .menu ul li a:hover{
 	background-color: rgba(70,70,70,1.00);
 	transition: 0.1s;
+	border: none;
 }
 .menu ul ul{
 	position: absolute;
 	display: none;
-	width: 150px;
-	left: 0; 
+	left: 0px;
 }
 .menu ul li:hover ul{
 	position: absolute;
@@ -49,7 +53,7 @@ body {
 }
 .menu ul ul li a{
 	display: block;
-	width: 200px;
+	width: 190px;
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
@@ -220,15 +224,15 @@ body {
 }
 
 .catalogo {
-	width: 75%;
+	width: 77.5%;
 	height: 1400px;
-	left: 22.5%;
+	left: 20%;
 	top: 550px;
 	position: absolute;
 	background: none;
 }
 .catalogo_img {
-	width: 300px;;
+	width: 325px;;
 	height: 400px;
 	background: rgba(0,0,0,1.00);
 	display: inline-block;
@@ -240,7 +244,7 @@ body {
 	transition: 0.4s;
 }
 .catalogo_img label{
-	width: 300px;
+	width: 325px;
 	height: 100px;
 	top: 300px;
 	position: relative;
