@@ -112,36 +112,4 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-h1{
-	color: rgba(255,255,255,1.00);
-	font-size: 48px;
-	text-align: center;
-	top: 150px;
-	left: 30%;
-	width: 40%;
-	position: absolute;
-	font-family: OCR A Extended;
-    font-weight: Bold;
-	border: rgba(255,255,255,1.00) solid 5px;
-	border-radius: 15px;
-	padding: 10px;
-}
-h2{
-	color: rgba(255,255,255,1.00);
-	font-size: 36px;
-	left: 5%;
-	width: 90%;
-	top: 250px;
-	position: relative;
-	font-family: OCR A Extended;
-    font-weight: Bold;
-}
-p{
-	color: rgba(255,255,255,1.00);
-	font-size: 24px;
-	font-family: OCR A Extended;
-	position: relative;
-	left: 5%;
-	width: 90%;
-	top: 250px;
-}
+
